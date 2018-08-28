@@ -1,0 +1,22 @@
+#menu{
+    float: right;
+    padding: 10px;
+}
+#menu li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+#menu li:not(:first-child){
+    border-left-width: 3px;
+}
+.itemMenu{
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.itemMenu:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
