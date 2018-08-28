@@ -6,13 +6,24 @@ form{
 form ol{
     list-style: none;
 }
+form ol li{
+    padding: 10px;
+}
+fieldset{
+    position: relative;
+    padding-top: 2em;
+}
 legend{
-    font-size: 2em;
+    position: absolute;
+    top: 5px;
+    font-size: 1.3em;
     font-weight: bold;
 }
 label{
     display: block;
-    padding-top: 15px;
+}
+label input{
+    margin-left: 2em;
 }
 .input{
     width: 100%;
@@ -20,11 +31,25 @@ label{
     border-radius: 5px;
     padding: 5px;
     color: #335;
+    background-color: #FFF;
+}
+.input:hover, .input:focus{
+    background-color: #DFF;
 }
 .botaoConfirmar{
     padding: 10px;
-    margin-top: 15px;
     border-width: 2px;
     border-radius: 15px;
     background-color: #149dcc;
+    cursor: pointer;
+    font-weight: bold;
+}
+.botaoConfirmar:hover, .botaoConfirmar:focus{
+    background-color: #34AFDF;
+}
+.botaoConfirmar:disabled, .input:disabled{
+    background-color: #99A;
+    border-color: #AAA;
+    color: #DDD;
+    cursor: auto;
 }

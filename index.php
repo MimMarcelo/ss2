@@ -30,6 +30,10 @@
                             <label for="inpSenha">Senha</label>
                             <input class="input" type="password" id="inpSenha" name="pSenha">
                         </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <ol>
                         <li>
                             <input class="botaoConfirmar" type="submit" value="Acessar">
                         </li>

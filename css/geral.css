@@ -37,7 +37,9 @@ header a{
     text-decoration: none;
 }
 h2{
+    color: #8E8;
     font-size: 2em;
+    text-align: center;
 }
 .corDegrade {
     background-color: #efefef;

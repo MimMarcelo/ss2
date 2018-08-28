@@ -16,6 +16,60 @@
         <?php
         require_once './inc/header.php';
         ?>
-        <h2>Cadastre-se</h2>
+        <div id="conteudo">
+            <h2>Cadastre-se</h2>
+            <form class="corDegrade">
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <ol>
+                        <li>
+                            <label for="inpCpf">CPF</label>
+                            <input class="input" type="text" id="inpCpf" name="pCpf" autofocus>
+                        </li>
+                        <li>
+                            <label for="inpNomeCompleto">Nome completo</label>
+                            <input class="input" type="text" id="inpNomeCompleto" name="pNomeCompleto">
+                        </li>
+                        <li>
+                            <label for="inpEmail">e-mail</label>
+                            <input class="input" type="email" id="inpEmail" name="pEmail">
+                        </li>
+                        <li>
+                            <label for="inpSenha">Senha</label>
+                            <input class="input" type="password" id="inpSenha" name="pSenha">
+                        </li>
+                        <li>
+                            <label for="inpCSenha">Confirme a senha</label>
+                            <input class="input" type="password" id="inpCSenha" name="pCSenha">
+                        </li>
+                        <li>
+                            <label for="inpImagem">Foto do perfil</label>
+                            <input class="input" type="file" id="inpImagem" name="pImagem">
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Avaliador</legend>
+                    <ol>
+                        <li>
+                            <label for="inpAvaliador">
+                                Candidatar-se como avaliador de trabalhos
+                                <input type="checkbox" id="inpAvaliador" name="pAvaliador">
+                            </label>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <ol>
+                        <li>
+                            <input class="botaoConfirmar" type="submit" value="Cadastrar">
+                        </li>
+                        <li>
+                            <label>Já é cadastrado? faça <a href="index.php" title="Faça login">login</a></label>
+                        </li>
+                    </ol>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>
