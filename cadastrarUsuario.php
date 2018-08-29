@@ -18,7 +18,7 @@
         ?>
         <div id="conteudo">
             <h2>Cadastre-se</h2>
-            <form class="corDegrade">
+            <form class="corDegrade" action="<?=htmlspecialchars('funcoes/cadastrarUsuario.php');?>" method="post">
                 <fieldset>
                     <legend>Identificação</legend>
                     <ol>
@@ -32,7 +32,7 @@
                         </li>
                         <li>
                             <label for="inpEmail">e-mail</label>
-                            <input class="input" type="email" id="inpEmail" name="pEmail">
+                            <input class="input" type="text" id="inpEmail" name="pEmail">
                         </li>
                         <li>
                             <label for="inpSenha">Senha</label>
