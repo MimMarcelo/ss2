@@ -33,7 +33,7 @@
                         </li>
                         <li>
                             <label for="inpEmail">e-mail</label>
-                            <input class="input" type="text" id="inpEmail" name="pEmail">
+                            <input class="input" type="email" id="inpEmail" name="pEmail">
                         </li>
                         <li>
                             <label for="inpSenha">Senha</label>

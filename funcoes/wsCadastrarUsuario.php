@@ -55,6 +55,7 @@ if ($metodoHttp === 'POST') {
             if($mensagem[0] > 0){
                 echo "<br>";
                 echo 'Salvou!';
+                return;
             }
         }
     } catch (Exception $e) {

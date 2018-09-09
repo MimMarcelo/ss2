@@ -18,30 +18,21 @@
         ?>
         <div id="conteudo">
             <h2>Sistema de Submissão 2.0</h2>
-            <form class="corDegrade">
+            <form class="corDegrade"method="post" action="<?= htmlspecialchars('funcoes/wsRecuperarSenha.php'); ?>">
                 <fieldset>
-                    <legend>Autenticação</legend>
+                    <legend>Recuperar senha</legend>
                     <ol>
+
                         <li>
-                            <label for="inpCpf">CPF</label>
-                            <input class="input" type="text" id="inpCpf" name="pCpf" autofocus>
-                        </li>
-                        <li>
-                            <label for="inpSenha">Senha</label>
-                            <input class="input" type="password" id="inpSenha" name="pSenha">
+                            <label for="inpEmail">Informe seu e-mail</label>
+                            <input class="input" type="email" id="inpEmail" name="pEmail">
                         </li>
                     </ol>
                 </fieldset>
                 <fieldset>
                     <ol>
                         <li>
-                            <input class="botaoConfirmar" type="submit" value="Acessar">
-                        </li>
-                        <li>
-                            <a href="cadastrarUsuario.php" title="Cadastre-se">Cadastre-se</a>
-                        </li>
-                        <li>
-                            <a href="recuperarSenha.php" title="Esqueceu a senha?">Esqueceu a senha?</a>
+                            <input class="botaoConfirmar" type="submit" value="Recuperar senha">
                         </li>
                     </ol>
                 </fieldset>
