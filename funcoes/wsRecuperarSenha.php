@@ -17,7 +17,9 @@ if ($metodoHttp === 'POST') {
                     . "A sua senha foi redefinida para: <b>Test3</b><br><br>"
                     . "att,<br>"
                     . "Equipe SS2.0";
-            $headers = "From: naoresponda.marcelo@gmail.com" . "\r\n";
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            $headers .= "From: naoresponda.marcelo@gmail.com" . "\r\n";
 
             if(mail($to, $subject, $txt, $headers)){
                 echo "Diz que deu certo!";
