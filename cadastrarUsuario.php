@@ -18,7 +18,8 @@
         ?>
         <div id="conteudo">
             <h2>Cadastre-se</h2>
-            <form class="corDegrade" action="<?=htmlspecialchars('funcoes/cadastrarUsuario.php');?>" method="post">
+            <form class="corDegrade" action="<?=htmlspecialchars('funcoes/wsCadastrarUsuario.php');?>"
+                  method="post" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Identificação</legend>
                     <ol>
@@ -54,7 +55,7 @@
                         <li>
                             <label for="inpAvaliador">
                                 Candidatar-se como avaliador de trabalhos
-                                <input type="checkbox" id="inpAvaliador" name="pAvaliador">
+                                <input type="checkbox" id="inpAvaliador" name="pAvaliador" value="1">
                             </label>
                         </li>
                     </ol>
